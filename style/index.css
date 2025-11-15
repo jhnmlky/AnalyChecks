@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #e9f4ff;
+    color: #333;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left {
+    flex: 2 0 300px;
+    padding: 10vw 0 5vw 0;
+}
+
+.logo {
+    height: auto;
+    width: 300px;
+}
+
+h1 {
+    font-weight: 800;
+    margin-left: 100px;
+    margin-top: -35px;
+    color: rgb(32, 32, 32);
+}
+
+.right {
+    flex: 3 0 500px;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0);
+    margin-top: 10vw;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 20px;
+    height: 60px;
+}
+
+.field input,
+.field button {
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+}
+
+.field input {
+    height: 40px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #9c9c9c;
+    transition: border-color 0.2s ease;
+}
+
+.field button {
+    margin-top: 10px;
+    font-weight: 600;
+    background-color: #1976d2;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 60%;
+    height: 25px;
+    right: 10px;
+    transform: translateY(-30%);
+    cursor: pointer;
+}
+
+.error, .success {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+}
+
+.username-error,
+.error {
+    color: red;
+}
+
+.success {
+    color: #00a400;
+}
+
+.username-error {
+    font-size: 9px;
+    padding-left: 3px;
+}
+
+.field label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.field.buttons {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.field.buttons .register,
+.field.buttons .login {
+    padding: 0 20px;
+    width: fit-content;
+    margin-top: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.field.buttons .register:hover,
+.field.buttons .login:hover {
+    text-decoration: underline;
+}
+
+.field input:focus {
+    border-color: #1976d2bb;
+    box-shadow: 0 0 5px #1976d23d;
+}
+
+.field button:hover {
+    background-color: #1565c0;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 10px;
+    padding: 5px 0;
+    color: #a8a8a8;
+}

@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    background: #e9f4ff;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #1976d2;
+}
+
+.table-container {
+    max-height: 500px;
+    overflow-y: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    background: white;
+    margin-top: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background: #1976d2;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+th, td {
+    padding: 8px 12px;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+th {
+    font-weight: 600;
+}
+
+th .small {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    color: rgba(255,255,255,0.8);
+}
+
+tr:nth-child(even) {
+    background: #fafafa;
+}
+
+i {
+    color: white;
+}
+
+p.small {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.row-missing td {
+  background: #f44336bb;
+}
+
+.row-duplicate td {
+  background: #c8e6c9;
+}
+
+.row-outlier td {
+  background: #bbdefb;
+}
+
+.legend-box {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.legend-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.legend-swatch {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    vertical-align:middle;
+    margin:0 5px 5px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.swatch-missing {
+    background:#f44336bb;
+}
+
+.swatch-duplicate {
+    background:#c8e6c9;
+}
+
+.swatch-outlier {
+    background:#bbdefb;
+}
