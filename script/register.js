@@ -33,7 +33,7 @@ function validateForm() {
         password.style.borderBottomWidth = '';
         password.style.borderBottomColor = '';
     }
-    if (username.value.trim() === '' || email.value.trim() === '' || password.value.trim() === '') {
+    if (username.value.trim() === '' || email.value.trim() === '' || !pattern.test(email.value.trim()) || password.value.trim() === '') {
         return false;
     }
     return true;
