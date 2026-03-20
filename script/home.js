@@ -202,7 +202,7 @@ function parseFile(file) {
         if (file.name.match(/\.csv$/i)) {
             reader.readAsText(file);
         } else {
-            reader.readAsBinaryString(file);
+            reader.readAsArrayBuffer(file);
         }
     });
 }
