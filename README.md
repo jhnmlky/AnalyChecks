@@ -8,3 +8,9 @@
 ![Home 4](screenshots/home4.png)
 ![Home 5](screenshots/home5.png)
 ![Home 6](screenshots/home6.png)
+
+Prerequisites (Local)
+
+A MySQL (or MariaDB) database server must be running.
+A database named 'analychecks'.
+A .env file containing your own OPENAI_API_KEY.
